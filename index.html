@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background-image: url('restaurant-hero.jpg'); /* Beddel si aad u geliso sawirkaaga */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      color: black;
+    }
+    .hero p{
+        color: black;
+    }
+    .menu-item {
+      margin-bottom: 20px;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Restaurant Name</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reservation">Reservation</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <h1>Welcome to Our Restaurant</h1>
+      <p>Enjoy the best dining experience</p>
+      <a href="#" class="btn btn-primary">Discover Our Menu</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="container py-5" id="menu">
+    <h2 class="text-center mb-4">Our Menu</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://thekitchengirl.com/wp-content/uploads/Grilled-Salmon-a_19-1.jpg" class="card-img-top" alt="Dish 1">
+          <div class="card-body">
+            <h5 class="card-title">Grilled Salmon</h5>
+            <p class="card-text">A delicate salmon dish with a refreshing herb dressing.</p>
+            <a href="#" class="btn btn-primary">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz3CCwkt7_9uFI3M75DmkRQJ0nGeMiPi9DjQ&s" class="card-img-top" alt="Dish 2">
+          <div class="card-body">
+            <h5 class="card-title">Steak with Vegetables</h5>
+            <p class="card-text">Perfectly cooked steak served with seasonal vegetables.</p>
+            <a href="#" class="btn btn-primary">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQmlbWfPETXPQ5v6HlwDP3IzsvA6X7-FLJVw&s" class="card-img-top" alt="Dish 3">
+          <div class="card-body">
+            <h5 class="card-title">Classic Burger</h5>
+            <p class="card-text">A classic burger with cheese, lettuce, and a secret sauce.</p>
+            <a href="#" class="btn btn-primary">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Section -->
+  <section class="bg-light py-5" id="reservation">
+    <div class="container">
+      <h2 class="text-center mb-4">Make a Reservation</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+          <label for="date" class="form-label">Date</label>
+          <input type="date" class="form-control" id="date">
+        </div>
+        <div class="mb-3">
+          <label for="time" class="form-label">Time</label>
+          <input type="time" class="form-control" id="time">
+        </div>
+        <div class="mb-3">
+          <label for="people" class="form-label">Number of Guests</label>
+          <input type="number" class="form-control" id="people" placeholder="How many people?">
+        </div>
+        <button type="submit" class="btn btn-primary">Book Table</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2024 Restaurant Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
